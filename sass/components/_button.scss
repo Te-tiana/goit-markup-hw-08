@@ -1,0 +1,73 @@
+.button {
+	display: flex;
+	font-family: $main-ff;
+	font-weight: $mid-fw;
+	font-size: $btn-fz;
+	line-height: $btn-2-lh;
+	text-align: center;
+	letter-spacing: inherit;
+
+	padding: 6px 22px;
+	min-width: 73px;
+
+	border: transparent;
+	border-radius: 4px;
+
+	color: $title-text-color;
+	background-color: $secondary-bg-color;
+
+	transition: color $transition-duration $transition-timing-function,
+		background-color $transition-duration $transition-timing-function;
+
+	&--current,
+	&:hover,
+	&:focus {
+		color: $primary-white-color;
+		background-color: $accent-color;
+	}
+
+	}
+
+.button--primary {
+	display: inline-block;
+	min-width: 200px;
+	min-height: 50px;
+
+	font-family: $main-ff;
+	font-weight: $bold-fw;
+	font-size: $btn-fz;
+	line-height: $btn-pr-lh;
+	letter-spacing: $hero-lsp;
+	padding: 10px 32px;
+
+	color: $primary-white-color;
+	background-color: $accent-color;
+
+	transition: transform $transition-duration $transition-timing-function;
+
+	&:hover,
+	&:focus {
+		transform: scale(1.1);
+	}
+}
+
+.button__footer {
+	position: relative;
+	padding: 10px 28px;
+	min-width: 200px;
+
+	font-weight: $bold-fw;
+	line-height: $btn-pr-lh;
+	letter-spacing: $hero-lsp;
+
+	color: $primary-white-color;
+	background-color: $accent-color;
+
+	transition: transform $transition-duration $transition-timing-function;
+
+	&:hover,
+	&:focus {
+	transform: scale(1.1);
+	outline: none;
+}
+}

@@ -1,0 +1,29 @@
+.logo {
+	display: block;
+	font-family: $logo-ff;
+	font-weight: $bold-fw;
+	font-size: $logo-fz;
+	line-height: $logo-lh;
+
+	transition: font-size $transition-duration $transition-timing-function;
+
+	color: $logo-black-color;
+
+	&:hover,
+	&:focus {
+	font-size: 36px;
+}
+
+}
+
+.logo--accent {
+	color: $accent-color;
+}
+
+.footer__logo {
+	color: $primary-white-color;
+	margin-bottom: 20px;
+	margin-top: 0;
+}
+
+

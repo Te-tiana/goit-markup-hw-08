@@ -1,0 +1,35 @@
+// Section Features
+.container__features {
+	padding-bottom: 0;
+	padding-top: 94px;
+}
+
+.thumb {
+	display: flex;
+	margin-bottom: 30px;
+	margin-top: 0;
+	height: 120px;
+
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	align-items: center;
+	justify-content: center;
+
+	background-color: $secondary-bg-color;
+}
+
+.thumb__icon {
+	width: 70px;
+	height: 70px;
+}
+
+.title__features {
+	line-height: 1.4;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.text__features {
+	margin: 0;
+}

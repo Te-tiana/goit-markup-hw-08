@@ -1,0 +1,30 @@
+/* Our Clients */
+.client__logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 170px;
+	height: 90px;
+	border: 1px solid $social-list-color;
+	border-radius: 4px;
+
+	transition: border-color $transition-duration $transition-timing-function;
+	
+	&:hover,
+	&:focus {
+	border-color: $accent-color;
+}
+
+}
+
+.client__icon {
+	fill: $social-list-color;
+
+	transition: fill $transition-duration $transition-timing-function;
+
+	.client__logo:hover &,
+	.client__logo:focus & {
+	fill: $accent-color;
+}
+}
+
