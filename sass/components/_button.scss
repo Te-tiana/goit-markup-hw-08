@@ -46,6 +46,8 @@
 
 	color: $primary-white-color;
 	background-color: $accent-color;
+	border: none;
+	outline: none;
 
 	transition: transform $transition-duration $transition-timing-function;
 
