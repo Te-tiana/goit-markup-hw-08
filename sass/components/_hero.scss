@@ -35,7 +35,7 @@
 
 .hero__title {
 	font-weight: $hero-fw;
-	font-size: 44px;
+	font-size: $logo-fz;
 	line-height: $hero-lh;
 	letter-spacing: $hero-lsp;
 	text-transform: uppercase;
@@ -44,4 +44,8 @@
 	margin-bottom: 30px;
 
 	color: $primary-white-color;
+
+	@media screen and (min-width: 1200px) {
+		font-size: 44px;
+	}
 }
