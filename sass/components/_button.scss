@@ -1,14 +1,10 @@
 .button {
-	display: flex;
 	font-family: $main-ff;
 	font-weight: $mid-fw;
 	font-size: $btn-fz;
 	line-height: $btn-2-lh;
 	text-align: center;
 	letter-spacing: inherit;
-
-	padding: 6px 22px;
-	min-width: 73px;
 
 	border: transparent;
 	border-radius: 4px;
@@ -17,16 +13,24 @@
 	background-color: $secondary-bg-color;
 
 	transition: color $transition-duration $transition-timing-function,
-		background-color $transition-duration $transition-timing-function;
+	background-color $transition-duration $transition-timing-function;
 
 	&--current,
 	&:hover,
 	&:focus {
 		color: $primary-white-color;
-		background-color: $accent-color;
-	}
+		background-color: $accent-color;}
 
+	
+
+	@media screen and (min-width: 1200px) {
+	display: flex;
+	padding: 6px 22px;
+	min-width: 73px;
 	}
+	
+
+}
 
 .button--primary {
 	display: inline-block;

@@ -14,12 +14,19 @@
 <body class="body">
     <header class="header">
         <div class="container header__container">
-            <nav class="main-nav">
-                <a href="./index.html" class="logo">
-                    <span class="logo--accent">Web</span>Studio
-                </a>
+            <a href="./index.html" class="logo">
+                <span class="logo--accent">Web</span>Studio
+            </a>     
+                <button type="button" class="menu-button" data-menu-button aria-expanded="false">
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню" aria-controls="menu-container">
             
-                <ul class="list site-nav">
+                        <use class="icon-menu" href="./images/icon/sprite.svg#icon-menu-burger"></use>
+                        <use class="icon-cross" href="./images/icon/sprite.svg#icon-close-burger"></use>
+                    </svg>
+                </button>
+        <div class="menu-container" id="menu-container" data-menu>
+            <nav class="main-nav">
+                  <ul class="list site-nav">
                     <li class="site-nav__item"><a href="./index.html" class="link site-nav__link site-nav__link--current">Студия</a></li>
                     <li class="site-nav__item"><a href="./portfolio.html" class="link site-nav__link">Портфолио</a></li>
                     <li class="site-nav__item"><a href="#" class="link site-nav__link">Контакты</a></li>
@@ -36,6 +43,7 @@
                         <use href="./images/icon/sprite.svg#icon-smartphone"></use>
                     </svg>+38 096 111 11 11</a>
             </div>
+        </div>
         </div>
         
 
