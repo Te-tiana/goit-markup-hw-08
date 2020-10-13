@@ -1,3 +1,8 @@
+html {
+	width: 100%;
+    max-width: 100%;
+	overflow-x: hidden;
+}
 body {
 	color: $primary-text-color;
 	background-color: $primary-white-color;
@@ -5,8 +10,14 @@ body {
 	font-family: $main-ff;
   	font-size: $main-fz;
   	line-height: $main-lh;
-  	letter-spacing: $main-lsp;
-  	
+	letter-spacing: $main-lsp;
+	  
+	width: 100%;
+    max-width: 100%;
+        overflow-x: hidden;
+   
+
+	   	
 	& .modal-open {
   overflow: hidden;
 }
@@ -16,6 +27,7 @@ img {
 	display: block;
 	max-width: 100%;
 	height: auto;
+	
 }
 
 
@@ -63,7 +75,7 @@ img {
 }
 
 
-@media screen and (min-width: 1200px) {
+
 .main-nav,
 .site-nav,
 .contact,
@@ -71,7 +83,7 @@ img {
 	display: flex;
 	align-items: center;
 }
-}
+
 
 .site-nav__link,
 .contact__link {
@@ -87,13 +99,7 @@ img {
 }
 
 
-.section__title {
-	font-size: 36px;
-	line-height: $main-lh;
-	text-align: center;
-	margin-bottom: 50px;
-}
-
+@media screen and (min-width: 1200px) {
 .item {
 	width: calc((100% - 3 * 30px) / 4);
 }
@@ -106,16 +112,24 @@ img {
 	margin-right: 30px;
 }
 
-.header,
-.section,
-.hero,
-.footer {
-	margin: 0;
+.section__title {
+	font-size: 36px;
+	line-height: $main-lh;
+	text-align: center;
+	margin-bottom: 50px;
 }
 
 .section {
 	padding-top: 94px;
 	padding-bottom: 94px;
+}
+}
+
+.header,
+.section,
+.hero,
+.footer {
+	margin: 0;
 }
 
 .flexbox {

@@ -1,3 +1,22 @@
+.team__content .social-list {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: no-wrap;
+
+
+}
+
+
+.team-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.team__content {
+	align-items: centre;
+	justify-content: center;
+}
 .social__item:not(:last-child) {
 	margin-right: 10px;
 }

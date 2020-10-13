@@ -1,13 +1,44 @@
 //  Наши проекты
+.section.projects {
+	display: none;
+
+	@media screen and (min-width: 1200px) {
+	display: block;
+
+  }
+
+}
+
+.projects .section__title {
+font-weight: $bold-fw;
+font-size: $title-2-fz;
+text-align: center;
+margin: 0;
+}
+
+.projects .list {
+display: flex;
+margin-top: 50px;
+margin-bottom: 0;
+padding-left: 0;
+padding-bottom: 94px;
+
+&:not(:last-child) {
+  margin-right: 30px;
+}
+
+}
+
 .item__projects {
 	position: relative;
+	width: 370px;
 
-	width: calc((100% - 2 * 30px) / 3);
+	// width: calc((100% - 2 * 30px) / 3);
 }
 
-.item__projects:nth-child(3n) {
-	margin-right: 0;
-}
+// .item__projects:nth-child(3n) {
+// 	margin-right: 0;
+// }
 
 .image__projects {
 	position: absolute;
@@ -24,6 +55,13 @@
 }
 
 .image__title {
+	position: absolute;
+	width: 100%;
+
+ 	bottom: 0;
+ 	left: 0;
+	padding-top: 27px;
+	padding-bottom: 27px;
 	margin: 0;
 
 	font-family: $main-ff;
@@ -34,4 +72,5 @@
 	text-transform: uppercase;
 
 	color: $primary-white-color;
+
 }
