@@ -287,6 +287,11 @@ img {
   border-bottom: 1px solid #ECECEC;
 }
 
+.main-nav {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 @media screen and (min-width: 768px) {
   .main-nav {
     display: flex;
@@ -308,7 +313,10 @@ img {
   position: relative;
   color: #212121;
   display: inline-flex;
-  padding: 40px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 0;
+  padding-right: 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1286,6 +1294,10 @@ img {
   .general__links {
     margin-right: 92px;
   }
+}
+
+.main-footer {
+  text-align: baseline;
 }
 
 @media screen and (min-width: 768px) {
