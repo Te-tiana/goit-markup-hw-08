@@ -14,7 +14,7 @@
 
 	@media screen and (min-width: 1200px) {
 		flex-direction: row;
-		justify-content: center;
+		justify-content: space-evenly;
 		text-align: baseline;
 		align-items: center;
 	}
@@ -25,11 +25,13 @@
 .general__links {
 	margin-bottom: 60px;
 	text-align: center;
+	justify-content: space-evenly;
 	margin-right: auto;
 	margin-left: auto;}
 
 .container__about-us {
 	@media screen and (min-width: 768px) {
+	justify-content: space-evenly;
 		margin-right: 165px;
 	}
 @media screen and (min-width: 1200px) {
@@ -51,9 +53,17 @@
 	}}
 
 
+.footer .contact__link {
+	justify-content: center;
+	margin-right: center;
+	margin-left: center;
+}
+
 .address__item {
 	align-items: center;
-	justify-content: center;
+	// justify-content: center;
+	// margin-right: center;
+	// margin-left: center;
 
 	font-family: $main-ff;
 	font-style: normal;
@@ -131,6 +141,10 @@
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	border-radius: 4px;
 	padding: 16px;
+
+	@media screen and (max-width: 767px) {
+		max-width: 450px;
+	}
 
 	transition: border-color $transition-duration $transition-timing-function;
 

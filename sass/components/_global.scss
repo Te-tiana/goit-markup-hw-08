@@ -99,18 +99,6 @@ img {
 }
 
 
-@media screen and (min-width: 1200px) {
-.item {
-	width: calc((100% - 3 * 30px) / 4);
-}
-
-.item:nth-child(4n) {
-	margin-right: 0;
-}
-
-.item:not(:last-child) {
-	margin-right: 30px;
-}
 
 .section__title {
 	font-size: 36px;
@@ -123,7 +111,7 @@ img {
 	padding-top: 94px;
 	padding-bottom: 94px;
 }
-}
+
 
 .header,
 .section,
