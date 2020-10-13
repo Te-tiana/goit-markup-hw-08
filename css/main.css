@@ -530,7 +530,7 @@ img {
 .button__footer {
   position: relative;
   padding: 10px 28px;
-  width: 200px;
+  min-width: 200px;
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
@@ -1233,6 +1233,8 @@ img {
   .footer__container {
     flex-direction: row;
     justify-content: center;
+    text-align: baseline;
+    align-items: center;
   }
 }
 
@@ -1302,7 +1304,13 @@ img {
   padding: 0;
   margin: 0;
   background: transparent;
-  text-align: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .form__footer {
+    margin-top: -45px;
+  }
 }
 
 .form__footer .flexbox {
@@ -1315,7 +1323,7 @@ img {
 @media screen and (min-width: 1200px) {
   .form__footer .flexbox {
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
   }
 }
 

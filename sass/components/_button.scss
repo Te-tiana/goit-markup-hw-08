@@ -60,7 +60,7 @@
 .button__footer {
 	position: relative;
 	padding: 10px 28px;
-	width: 200px;
+	min-width: 200px;
 
 	font-weight: $bold-fw;
 	line-height: $btn-pr-lh;
