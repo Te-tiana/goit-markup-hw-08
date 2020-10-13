@@ -40,8 +40,7 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 }
-					
-	  	@media screen and (min-width: 1200px) {
+		@media screen and (min-width: 1200px) {
 		display: flex;
 		justify-content: center;
 		
@@ -56,8 +55,6 @@
 
 .section.team .team__name {
 	margin-bottom: 10px;
-	// margin-top: 30px;
-
 	font-size: $btn-fz;
 	font-weight: $mid-fw;
 	line-height: $logo-lh;
@@ -119,15 +116,9 @@
 
 	
 	@media screen and (min-width: 1200px) {
-		 & {display: inline-flex;}
-		  
-		// &:not(:last-child) {margin-right: 30px;}
+		 & {	  width: calc((100% - 3* 30px) / 4);	  }
 
-		  width: calc((100% - 3* 30px) / 4);
-
-	  }
-
- 	}
+ 	}}
 
 .item-team--white img {
 	width: 100%;

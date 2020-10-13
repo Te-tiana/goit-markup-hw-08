@@ -799,7 +799,15 @@ img {
 @media screen and (min-width: 768px) {
   .container__features .list {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container__features .item {
+    width: calc((100% - 1 * 30px) / 2);
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 }
 
@@ -807,21 +815,12 @@ img {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) {
-  .container__features .item {
-    width: calc((100% - 1 * 30px) / 2);
-  }
-  .container__features .item:nth-child(odd) {
-    margin-right: 30px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
-  .container__features .item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .container__features .item:not(:last-child) .container__features .item {
     width: calc((100% - 3 * 30px) / 4);
+  }
+  .container__features .item:not(:last-child):not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -877,33 +876,16 @@ img {
 @media screen and (min-width: 1200px) {
   .section.projects {
     display: block;
+    margin-right: 15px;
+    margin-left: 15px;
   }
-  .section.projects .item {
-    width: calc((100% - 3 * 30px) / 4);
-  }
-}
-
-.section.projects .item:nth-child(4n) {
-  margin-right: 0;
-}
-
-.section.projects .item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .item__projects {
   position: relative;
-  width: 370px;
+  padding: 0;
+  margin: 0;
   width: calc((100% - 2 * 30px) / 3);
-}
-
-.item__projects:nth-child(3n) {
-  margin-right: 0;
-}
-
-.item__projects img {
-  width: 100%;
-  max-width: 370px;
 }
 
 .image__projects {
@@ -912,6 +894,7 @@ img {
   left: 0;
   width: 100%;
   min-height: 70px;
+  max-width: 370px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -927,11 +910,14 @@ img {
 }
 
 .projects .list {
+  list-style: none;
   display: flex;
+  margin-right: auto;
+  margin-left: auto;
   margin-top: 50px;
   margin-bottom: 0;
-  padding-left: 0;
   padding-bottom: 94px;
+  justify-content: space-between;
 }
 
 .projects .list:not(:last-child) {
@@ -1080,9 +1066,6 @@ img {
   .item-team--white {
     width: calc((100% - 3* 30px) / 4);
   }
-  .item-team--white {
-    display: inline-flex;
-  }
 }
 
 .item-team--white img {
@@ -1118,7 +1101,7 @@ img {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: -30px;
 }
 
