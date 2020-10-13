@@ -1,4 +1,6 @@
 .footer {
+	padding-right: 15px;
+	padding-left: 15px;
 	padding-top: 60px;
 	padding-bottom: 60px;
 	font-style: normal;
@@ -19,9 +21,6 @@
 	}
 
 	
-
-
-
 .container__about-us,
 .general__links {
 	margin-bottom: 60px;
@@ -116,6 +115,15 @@
 		text-align: left;
 	}
 }
+
+.footer .flexbox {
+	@media screen and (max-width: 767px) {
+	margin-left: 20px;
+	margin-right: 20px;
+}}
+
+	
+
 .email {
 	margin-right: 12px;
 	width: 100%;

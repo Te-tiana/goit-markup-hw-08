@@ -1237,6 +1237,8 @@ img {
 }
 
 .footer {
+  padding-right: 15px;
+  padding-left: 15px;
   padding-top: 60px;
   padding-bottom: 60px;
   font-style: normal;
@@ -1353,6 +1355,13 @@ img {
   .join__links,
   .newsletter {
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer .flexbox {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
