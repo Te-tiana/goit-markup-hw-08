@@ -1,11 +1,19 @@
 .main-nav  {
-	
-@media screen and (min-width: 768px){
-	display: flex;
-	align-items: center;
-	padding-top: 16px;
-    padding-bottom: 16px;
 
+@media screen and (min-width: 768px) {
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-top: 16px;
+padding-bottom: 16px;
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+  display: flex;
+ align-items: center;
+
+	
 }
 }
 
@@ -14,29 +22,33 @@
 	color: $title-text-color;
 
 	display: inline-flex;
+	padding: 40px;
 
 	transition: color $transition-duration $transition-timing-function;
+
+	@media screen and (min-width: 768px) {
+		padding: 8px 0;
+	}
+
+	@media screen and (min-width:1200px) {
+		padding: 28px 0;
+	}
 
 	&--current,
 	&:focus,
 	&:hover {
-	color: $accent-color;
+	color: $accent-color;}
 
-	@media screen and (max-width: 767px) {
-		padding: 8px 0;
-	}
-
-	@media screen and (max-width:1199px) {
-		padding: 28px 0;
-	}
+	
 }
 }
 
 .contact__link {
+	display: flex;
+	margin-bottom: 16px;
 	font-style: normal;
 	color: $primary-text-color;
 	
-
 	transition: color $transition-duration $transition-timing-function;
 
 	&:hover,
@@ -51,6 +63,21 @@
 	margin-left: 50px;}
 	}
 }
+
+.contact {
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 21px 30px;
+	
+	
+		@media screen and (min-width: 1200px) {
+		display: inline-flex;
+		flex-direction: row;
+	}
+}
+
 
 .site-nav__link--current::after {
 	content: "";
@@ -72,35 +99,25 @@
 
 .site-nav {
 	@media screen and (max-width: 767px) {
-	display: block;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-right: auto;
+	margin-left: auto;
+	// margin-bottom: 60px;
+
 	}
 
-	@media screen and (min-width: 1200px){
+	@media screen and (min-width: 768px){
 	display: flex;
 	margin-left: 93px;
 }
 }
 
 
-.site-nav__item {
-	@media screen and (max-width: 767px) {
-    display: block;
-    margin-bottom: 52px;}
-
-}
 
 .site-nav__item:not(:last-child) {
-	@media screen and (min-width: 1200px) {
+	@media screen and (min-width: 768px) {
 	margin-right: 50px;}
 }
 
-.contact {
-	@media screen and (max-width: 768px) {
-	margin-top: 150px;
-	align-items: center;
-	}
-
-	@media screen and (min-width: 768px) {
-	display: flex;
-	margin-left: auto; }
-}

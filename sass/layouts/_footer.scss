@@ -73,6 +73,7 @@
 
 .newsletter {
 	display: block;
+	text-align:center;
 
 	line-height: $main-lh;
 	letter-spacing: $main-lsp;
@@ -91,7 +92,7 @@
 
 	align-items: center;
 	@media screen and (min-width: 1200px) {
-   margin-top: -45px;
+   margin-bottom: 70px;
 	}
 
 	

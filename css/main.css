@@ -264,11 +264,11 @@ img {
   top: 100%;
   left: 0;
   width: 100%;
-  height: 400px;
+  height: 480px;
   background-color: #FFFFFF;
-  padding: 60px 140px;
   text-align: center;
   font-size: 18px;
+  z-index: 2;
 }
 
 .menu-container.is-open {
@@ -279,6 +279,7 @@ img {
   .menu-container {
     position: static;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     flex-grow: 1;
     height: auto;
@@ -299,36 +300,47 @@ img {
 @media screen and (min-width: 768px) {
   .main-nav {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding-top: 16px;
     padding-bottom: 16px;
   }
 }
 
-.site-nav__link {
+@media screen and (min-width: 768px) and (min-width: 768px) and (max-width: 1199px) {
+  .main-nav {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.main-nav .site-nav__link {
   position: relative;
   color: #212121;
   display: inline-flex;
+  padding: 40px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav__link--current, .site-nav__link:focus, .site-nav__link:hover {
-  color: #2196F3;
-}
-
-@media screen and (max-width: 767px) {
-  .site-nav__link--current, .site-nav__link:focus, .site-nav__link:hover {
+@media screen and (min-width: 768px) {
+  .main-nav .site-nav__link {
     padding: 8px 0;
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .site-nav__link--current, .site-nav__link:focus, .site-nav__link:hover {
+@media screen and (min-width: 1200px) {
+  .main-nav .site-nav__link {
     padding: 28px 0;
   }
 }
 
+.main-nav .site-nav__link--current, .main-nav .site-nav__link:focus, .main-nav .site-nav__link:hover {
+  color: #2196F3;
+}
+
 .contact__link {
+  display: flex;
+  margin-bottom: 16px;
   font-style: normal;
   color: #757575;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -345,6 +357,20 @@ img {
   }
   .contact__link + .contact__link {
     margin-left: 50px;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 21px 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact {
+    display: inline-flex;
+    flex-direction: row;
   }
 }
 
@@ -365,41 +391,24 @@ img {
 
 @media screen and (max-width: 767px) {
   .site-nav {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .site-nav {
     display: flex;
     margin-left: 93px;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .site-nav__item {
-    display: block;
-    margin-bottom: 52px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .site-nav__item:not(:last-child) {
     margin-right: 50px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .contact {
-    margin-top: 150px;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .contact {
-    display: flex;
-    margin-left: auto;
   }
 }
 
@@ -572,14 +581,23 @@ img {
   transform: translate(-50%, -50%) scale(1);
   width: 100%;
   height: 100%;
-  padding: 40px;
+  padding: 10px;
   font-size: 12px;
   letter-spacing: 0.01em;
   line-height: 1.17;
-  max-width: 528px;
-  min-height: 580px;
+  overflow: auto;
+  max-width: 450px;
+  display: relative;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    padding: 40px;
+    max-width: 528px;
+    max-height: 680px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -612,6 +630,7 @@ img {
 }
 
 .form {
+  display: block;
   width: 100%;
   height: 100%;
   margin-right: auto;
@@ -711,6 +730,8 @@ img {
 
 .form__policy {
   margin-bottom: 30px;
+  max-height: 100%;
+  white-space: nowrap;
 }
 
 .placeholder {
@@ -1291,6 +1312,7 @@ img {
 
 .newsletter {
   display: block;
+  text-align: center;
   line-height: 1.17;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
@@ -1309,7 +1331,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .form__footer {
-    margin-top: -45px;
+    margin-bottom: 70px;
   }
 }
 

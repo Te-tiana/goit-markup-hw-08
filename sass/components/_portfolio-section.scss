@@ -1,6 +1,9 @@
 //  Portfolio Section
 .filter__list {
+	padding-top: 60px;
 	margin-bottom: 34px;
+
+	
 }
 
 .filter__list--center {
@@ -16,6 +19,20 @@
 	margin-right: 8px;
 }
 
+.portfolio {
+display: flex;
+flex-direction: column;
+
+}
+
+.portfolio__item {
+	@media screen and (max-width: 767px) {
+		display: block;
+		width: 100%;
+		height: auto;
+
+	}
+}
 .portfolio__item {
 	margin-right: 30px;
 	margin-bottom: 30px;
