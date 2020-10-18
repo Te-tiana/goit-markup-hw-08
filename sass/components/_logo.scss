@@ -2,8 +2,8 @@
 	display: block;
 	font-family: $logo-ff;
 	font-weight: $bold-fw;
-	font-size: 24px;
-	line-height: $main-lh;
+	font-size: $logo-fz;
+	line-height: $logo-lh;
 
 	transition: font-size $transition-duration $transition-timing-function;
 
@@ -11,16 +11,9 @@
 
 	&:hover,
 	&:focus {
-	font-size: 26px;
+	font-size: 36px;
 }
 
-@media screen and (min-width: 1200px) {
-	font-size: $logo-fz;
-	line-height: $logo-lh;
-	&:hover,
-	&:focus {
-	font-size: 36px;}
-}
 }
 
 .logo--accent {
@@ -31,9 +24,6 @@
 	color: $primary-white-color;
 	margin-bottom: 20px;
 	margin-top: 0;
-
-	text-align: center;
-	
 }
 
 

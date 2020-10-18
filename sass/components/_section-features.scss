@@ -1,58 +1,31 @@
 // Section Features
 .container__features {
-	padding: 60px 15px;
-
-	@media screen and (min-width: 1200px){
-padding-bottom: 0;
-padding-top: 94px;
-height: auto;
-	}
+	padding-bottom: 0;
+	padding-top: 94px;
 	
 }
+
 
 .container__features .list {
-	margin: 0;
-	width: 100%;
-
-	@media screen and (min-width: 768px) {
-		display: flex;
-
-	}
-		
-}
-
-	@media screen and (min-width: 768px){
-		.container__features .item {
-	width: calc((100% - 1 * 30px) / 2);
+	list-style: none;
 	display: flex;
-flex-wrap: wrap;
-	justify-content: space-evenly;
 }
-}
-.container__features .item:not(:last-child) {
-	margin-bottom: 30px;
-	
-	
-@media screen and (min-width: 1200px) {
-	.container__features .item {
-		
-	width: calc((100% - 3 * 30px) / 4);}
 
-	&:not(:last-child) {margin-right: 30px;}}
-			
+.container__features .item {
+	width: calc((100% - 3 * 30px) / 4);
+
+&:nth-child(4n) {
+	margin-right: 0;}
+
+&:not(:last-child) {
+	margin-right: 30px;}
 }
-	
-	
 
 .thumb {
-	margin-top: 0;
-	margin-bottom: 30px;
-	
 	display: flex;
 	margin-bottom: 30px;
 	margin-top: 0;
 	height: 120px;
-	width: 100%;
 
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -61,9 +34,6 @@ flex-wrap: wrap;
 	justify-content: center;
 
 	background-color: $secondary-bg-color;
-
-
-
 }
 
 .thumb__icon {
@@ -72,25 +42,11 @@ flex-wrap: wrap;
 }
 
 .title__features {
-	font-size: $main-fz;
 	line-height: 1.4;
 	text-transform: uppercase;
 	margin-bottom: 10px;
-	
-	@media screen and (max-width: 767px) {
-		text-align: center;
-	}
-
-	@media screen and (min-width: 1200px) {
-		
-		margin-right: auto;
-	}
-
-
 }
 
 .text__features {
-	
-	display: flex;
 	margin: 0;
 }

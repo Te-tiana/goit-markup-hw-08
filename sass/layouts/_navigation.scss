@@ -1,88 +1,32 @@
-.main-nav  {
-padding-top: 60px;
-padding-bottom: 60px;
-
-@media screen and (min-width: 768px) {
-
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding-top: 16px;
-padding-bottom: 16px;
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-
-  display: flex;
- align-items: center;
-
-	
-}
-}
-
 .site-nav__link {
 	position: relative;
 	color: $title-text-color;
 
-	display: inline-flex;
-	padding-top: 20px;
-	padding-bottom: 40px;
-	padding-left: 0;
-	padding-right: 0;
-
 	transition: color $transition-duration $transition-timing-function;
-
-	@media screen and (min-width: 768px) {
-		padding: 8px 0;
-	}
-
-	@media screen and (min-width:1200px) {
-		padding: 28px 0;
-	}
 
 	&--current,
 	&:focus,
 	&:hover {
-	color: $accent-color;}
-
-	
+	color: $accent-color;
 }
 }
 
 .contact__link {
-	display: flex;
-	margin-bottom: 16px;
 	font-style: normal;
+	display: flex;
 	color: $primary-text-color;
-	
+	align-items: center;
+
 	transition: color $transition-duration $transition-timing-function;
 
 	&:hover,
 	&:focus {
 	color: $accent-color;}
 
-	@media screen and (min-width: 1200px) {
-	display: flex;
-	align-items: center; 
-
 	& + & {
-	margin-left: 50px;}
-	}
+	margin-left: 50px;
 }
-
-.contact {
-	
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 21px 30px;
-	
-	
-		@media screen and (min-width: 1200px) {
-		display: inline-flex;
-		flex-direction: row;
-	}
 }
-
 
 .site-nav__link--current::after {
 	content: "";
@@ -94,8 +38,6 @@ padding-bottom: 16px;
 	border-radius: 2px;
 
 	background-color: $accent-color;
-
-	
 }
 
 .contact__icon {
@@ -103,26 +45,13 @@ padding-bottom: 16px;
 }
 
 .site-nav {
-	@media screen and (max-width: 767px) {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin-right: auto;
-	margin-left: auto;
-	// margin-bottom: 60px;
-
-	}
-
-	@media screen and (min-width: 768px){
-	display: flex;
 	margin-left: 93px;
 }
-}
-
-
 
 .site-nav__item:not(:last-child) {
-	@media screen and (min-width: 768px) {
-	margin-right: 50px;}
+	margin-right: 50px;
 }
 
+.contact {
+	margin-left: auto;
+}

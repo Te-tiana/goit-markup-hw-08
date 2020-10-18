@@ -1,27 +1,17 @@
 //  Наши проекты
-.section.projects {
-	display: none;
-
-	@media screen and (min-width: 1200px) {
-			display: block;
-		margin-right: 15px;
-	margin-left: 15px;}}
-
-
-
-
 .item__projects {
 	position: relative;
-	padding: 0;
-	margin: 0;
-	
-	// overflow-x: hidden;
 
-
-	
 	width: calc((100% - 2 * 30px) / 3);
 }
 
+.item__projects:nth-child(3n) {
+	margin-right: 0;
+}
+
+.item__projects img {
+	width: 100%;
+}
 
 .image__projects {
 	position: absolute;
@@ -29,7 +19,6 @@
 	left: 0;
 	width: 100%;
 	min-height: 70px;
-	max-width: 370px;
 
 	display: flex;
 	justify-content: center;
@@ -37,49 +26,9 @@
 
 	background: rgba(47, 48, 58, 0.8);
 }
-	
-
- .projects .section__title {
-font-weight: $bold-fw;
-font-size: $title-2-fz;
-text-align: center;
-margin: 0;
-margin-bottom: 50px;
-}
-
-.projects .list {
-	list-style: none;
-display: flex;
-margin-right: auto;
-margin-left: auto;
-margin-top: 50px;
-margin-bottom: 0;
-
-padding-bottom: 94px;
-
-justify-content: space-between;
-
-&:not(:last-child) {
-  margin-right: 30px;}
-}
-
-.item__projects:nth-child(3n) {
-	margin-right: 0;
-}
-
 
 .image__title {
-	
- 	bottom: 0;
- 	left: 0;
-	padding-top: 27px;
-	padding-bottom: 27px;
 	margin: 0;
-	min-height: 70px;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
 
 	font-family: $main-ff;
 	font-size: $main-fz;
@@ -89,6 +38,4 @@ justify-content: space-between;
 	text-transform: uppercase;
 
 	color: $primary-white-color;
-
-
 }
